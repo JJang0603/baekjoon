@@ -1,27 +1,26 @@
-#include<stdio.h>
-int A[1000000];
+#include <stdio.h>
 
 int main()
 {
-	int i, N;
-	int max = -1000000;
-	int min = 1000000;
+	int N;
+	int min = 1000000, max = -1000000;
 
 	scanf("%d", &N);
-	for (i = 0; i < N; i++)
-	{
-		scanf("%d", &A[i]);
-		if (A[i] > max)
-		{
-			max = A[i];
-		}
+	int arr[N];
 
-		if (A[i] < min)
+	for (int i = 0; i < N; i++)
+	{
+		scanf("%d", &arr[i]);
+		if (arr[i] > max)
 		{
-			min = A[i];
+			max = arr[i];
+		}
+		if (arr[i] < min)
+		{
+			min = arr[i];
 		}
 	}
-	printf("%d %d\n", min, max);
-	
+	printf("%d %d", min, max);
+
 	return 0;
 }
