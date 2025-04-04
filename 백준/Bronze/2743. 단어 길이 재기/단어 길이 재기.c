@@ -13,10 +13,9 @@ int main()
 		{
 			break;
 		}
-		cnt++;
 	}
 
-	printf("%d\n", cnt);
+	printf("%d\n", i);
 
 	return 0;
 }
